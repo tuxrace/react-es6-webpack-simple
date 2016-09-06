@@ -1,4 +1,4 @@
 # react-es6-webpack-simple
     npm install
-    webpack-dev-server
+    npm start
     http://localhost/webpack-dev-server/
