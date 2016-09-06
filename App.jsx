@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Disp from './Disp.jsx'
+import Disp from './Components/Disp.jsx'
 
 class App extends React.Component{
   render(){
