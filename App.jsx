@@ -6,7 +6,7 @@ class App extends React.Component{
   render(){
     var data = ['Aida','Lorna','Fe'];
     return <div> 
-	<Disp name={data}/>	
+	<Disp name={mix}/>	
 	</div>
   }
 }
