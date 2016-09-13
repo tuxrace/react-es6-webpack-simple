@@ -9,10 +9,8 @@ export default class Disp extends React.Component{
   }
   
   componentDidMount() {
-    let r = this.props.name.map(function(x){
-	  return <h3>{x}</h3>
-	});
-	this.setState({data: r})
+    let r = this.props.name.map((x,i) => <li key={i}>{x.name}</li>  );    
+    this.setState({data: r})
   }
   
   render() {    

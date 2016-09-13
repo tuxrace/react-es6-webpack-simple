@@ -4,7 +4,7 @@ import Disp from './Components/Disp.jsx'
 
 class App extends React.Component{
   render(){
-    var data = ['Aida','Lorna','Fe'];
+    let data = [{name:'Aida'},{name:'Lorna'},{name:'Fe'}];
     return <div> 
 	<Disp name={data}/>	
 	</div>
