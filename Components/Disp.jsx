@@ -5,13 +5,13 @@ export default class Disp extends React.Component{
   
   constructor(props){
     super(props)
-	this.state = {data:null}
+    this.state = {data:null}
   }
   
   componentDidMount() {
-    let r = this.props.name.map((x,i) => <li key={i}>{x.name}</li>  );    
+    let r = this.props.name.map((x,i) => (<li key={i}>{x.name}</li>)  );    
     this.setState({data: r})
-  }
+  }  
   
   render() {    
     return <div>
