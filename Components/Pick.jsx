@@ -8,7 +8,7 @@ class Pick extends React.Component{
   }
   
   handleClick = () => {
-    const random = () => (Math.floor(Math.random() * this.props.choices.length))    		  
+    const random = () => (Math.floor(Math.random() * this.props.choices.length - 1))    		  
     this.setState({data: this.props.choices[random()].name})    
   }  
   
