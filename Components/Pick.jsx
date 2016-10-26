@@ -7,16 +7,13 @@ class Pick extends React.Component{
     this.chosen = null;
   }
   
-  handleClick(){    		  
-    this.setState({data: this.props.choices[this.random()].name})    
-  }
-
-  random(){
-    return Math.floor(Math.random() * this.props.choices.length)
-  }
+  handleClick = () => {
+    const random = () => (Math.floor(Math.random() * this.props.choices.length))    		  
+    this.setState({data: this.props.choices[random()].name})    
+  }  
   
-  render(){
-    return <div><button onClick={this.handleClick.bind(this)}> Pick One </button> <div>Lcky pick is: <b>{this.state.data}</b></div> </div>
+  render(){    
+    return <div><button onClick={this.handleClick}> Pick One </button> <div>Lcky pick is: <b>{this.state.data}</b></div> </div>
   }
 }
 
